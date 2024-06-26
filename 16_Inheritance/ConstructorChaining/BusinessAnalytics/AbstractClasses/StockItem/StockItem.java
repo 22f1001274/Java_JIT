@@ -11,7 +11,7 @@ public abstract class StockItem{
     private final int stockCode;
 
     // The price of stock itme exclusive of VAT(sales tax).
-    private int priceExVat; 
+    private int priceExVat;
 
     // The quantity of stock itme.
     private int quantityInStock;
@@ -21,6 +21,7 @@ public abstract class StockItem{
 
     // Constructor 
     public StockItem(int initialPriceExVat, int initialQuantityInStock){
+        System.out.println("At End i am called");
         noOfStockItemsCreated++;
         stockCode = noOfStockItemsCreated;
         priceExVat = initialPriceExVat;

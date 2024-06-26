@@ -10,11 +10,11 @@ public class ReliableHardDisc extends HardDisc {
     public ReliableHardDisc(int price, int quantity, int storage, int physicalS,
                             int rSpeed, int cacheS, String vend, int years){
         super(price, quantity, storage, physicalS, rSpeed, cacheS, vend);
+        System.out.println("This is Reliable Hard Disc Class and will now call,");
         guaranteedYears = years;
     } // ReliableHardDisc
 
     // Returns the string  "A description of the stock item"
-    @Override
     public String getDescription(){
         return super.getDescription() + ", guranteed " + guaranteedYears + " years";
     } // getDescription
